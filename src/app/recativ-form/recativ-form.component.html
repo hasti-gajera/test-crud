@@ -1,0 +1,10 @@
+<p>recativ-form works!</p>
+<form [formGroup]="loginform" (ngSubmit)="submit()">
+    <div>
+        <label for="">name</label>
+        <input type="text" placeholder="user name" formControlName = "name">
+        <span *ngIf="loginformControls['name']&& loginformControls['name'].invalid && loginformControls['name'].touched">enter name</span>
+    </div>
+    <input type="submit" name="" id="">
+</form>
+<button (click)="click()">click</button>
